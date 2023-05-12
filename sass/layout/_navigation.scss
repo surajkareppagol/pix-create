@@ -1,0 +1,39 @@
+.header {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 1.2rem 0.4rem 0.6rem 0.4rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-img-container {
+  &__img {
+    width: 20%;
+  }
+}
+
+.header-nav-container {
+}
+
+.nav-main {
+  &__ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+  }
+
+  &__li {
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+  }
+}
