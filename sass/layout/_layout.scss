@@ -1,7 +1,7 @@
 .section-main {
   max-width: 130rem;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: $color-white;
   border-radius: 8px;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .left-container {
-  background-color: var(--color-palette-one);
+  background-color: $color-primary;
   flex: 0 0 4%;
 }
 
@@ -26,11 +26,11 @@
   &__tool {
     padding: 0.8rem;
     font-size: 24px;
-    color: #fff;
+    color: $color-white;
     cursor: pointer;
 
     &--active {
-      background-color: rgba(44, 234, 164, 0.8);
+      background-color: $icon-background-color;
       border-radius: 20%;
     }
   }
@@ -48,7 +48,7 @@
 .template-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  border: 0.01px solid #000;
+  border: 0.01px solid $color-black;
 }
 
 .pixel {
@@ -56,7 +56,12 @@
   height: 5.4rem;
   background-color: transparent;
   margin: 0rem;
-  border: 0.01px solid #000;
+  border: 0.01px solid $color-black;
+
+  @include respond(phone) {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
 }
 
 .right-container {
@@ -64,7 +69,7 @@
   align-items: center;
   justify-content: center;
   flex: 0 0 10%;
-  background-color: var(--color-palette-one);
+  background-color: $color-primary;
 }
 
 .color-container {
@@ -80,6 +85,10 @@
   row-gap: 0.4rem;
   column-gap: 0.4rem;
 
+  @include respond(phone) {
+    padding: 0 0.6rem;
+  }
+
   &__div {
     width: 4.2rem;
     height: 4.2rem;
@@ -87,44 +96,49 @@
     border-radius: 4px;
     cursor: pointer;
 
+    @include respond(phone) {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+
     &--1 {
-      background-color: #000;
+      background-color: $color-black;
     }
 
     &--2 {
-      background-color: #ff0000;
+      background-color: $color-red;
     }
 
     &--3 {
-      background-color: #ffff00;
+      background-color: $color-yellow;
     }
 
     &--4 {
-      background-color: #00ff00;
+      background-color: $color-green;
     }
 
     &--5 {
-      background-color: #0000ff;
+      background-color: $color-blue;
     }
 
     &--6 {
-      background-color: #a020f0;
+      background-color: $color-purple;
     }
 
     &--7 {
-      background-color: #ffa500;
+      background-color: $color-orange;
     }
 
     &--8 {
-      background-color: #964b00;
+      background-color: $color-brown;
     }
 
     &--9 {
-      background-color: #fff;
+      background-color: $color-white;
     }
 
     &--10 {
-      background-color: #00ffff;
+      background-color: $color-aqua;
     }
   }
 }
@@ -132,7 +146,6 @@
 .section-detail {
   max-width: 120rem;
   margin: 0 auto;
-  background-color: #0000ff;
 }
 
 .detail-container,
@@ -151,7 +164,7 @@
   &__container {
     width: 80%;
     height: 80%;
-    background-color: var(--color-palette-one);
+    background-color: $color-primary;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -159,26 +172,38 @@
     flex-direction: column;
     position: relative;
 
+    @include respond(phone) {
+      height: 60%;
+    }
+
     &--close {
       position: absolute;
       top: 2%;
       right: 2%;
-      color: #fff;
+      color: $color-white;
       font-size: 44px;
       cursor: pointer;
       transition: all 0.2s;
 
+      @include respond(phone) {
+        font-size: 30px;
+      }
+
       &:hover {
-        color: #ffffffd0;
+        color: #ffffd0;
       }
     }
   }
 
   &__h1 {
-    color: #fff;
+    color: $color-white;
     font-size: 3.4rem;
     margin-bottom: 3.8rem;
     text-decoration: underline;
+
+    @include respond(phone) {
+      font-size: 2.4rem;
+    }
   }
 }
 
@@ -196,6 +221,10 @@
 
   &__img {
     width: 84%;
+
+    @include respond(phone) {
+      width: 74%;
+    }
   }
 }
 
@@ -209,18 +238,30 @@
 
     &:not(:last-child) {
       margin-bottom: 2rem;
+
+      @include respond(phone) {
+        margin-bottom: 1rem;
+      }
     }
   }
 
   &__tool {
-    color: #fff;
+    color: $color-white;
     font-size: 36px;
+
+    @include respond(phone) {
+      font-size: 24px;
+    }
   }
 
   &__p {
-    color: #fff;
+    color: $color-white;
     font-size: 1.5rem;
     font-weight: 500;
+
+    @include respond(phone) {
+      font-size: 1rem;
+    }
   }
 }
 
