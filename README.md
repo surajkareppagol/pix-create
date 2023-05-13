@@ -2,6 +2,8 @@
 
 A web application to create pixel arts for anything, with easy to use web interface.
 
+The `PIX Create` is now live, [here 🔗🔗](https://dev-shadoww.github.io/pix_create).
+
 ## How To Use It?
 
 ![Pix_Create](/assets/interface/pix_create_test.gif)
