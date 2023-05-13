@@ -24,24 +24,23 @@ tools.forEach((tool) => {
     tool.classList.add("tool-container__tool--active");
     currentTool = tool.dataset.tool;
 
-    if (currentTool === "brush") {
-      pixels.forEach((pixel) => {
-        pixel.addEventListener("click", () => {
-          pixel.style.backgroundColor = currentColor;
-        });
+    colors.forEach((color) => {
+      color.addEventListener("click", () => {
+        if (currentTool === "color") currentColor = color.dataset.color;
       });
-    } else if (currentTool === "color") {
-      colors.forEach((color) => {
-        color.addEventListener("click", () => {
-          currentColor = color.dataset.color;
-        });
+    });
+
+    pixels.forEach((pixel) => {
+      pixel.addEventListener("click", () => {
+        if (currentTool === "brush") pixel.style.backgroundColor = currentColor;
       });
-    } else if (currentTool === "erase") {
-      pixels.forEach((pixel) => {
-        pixel.addEventListener("click", () => {
+    });
+
+    pixels.forEach((pixel) => {
+      pixel.addEventListener("click", () => {
+        if (currentTool === "erase")
           pixel.style.backgroundColor = "transparent";
-        });
       });
-    }
+    });
   });
 });
