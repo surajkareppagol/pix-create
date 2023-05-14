@@ -43,6 +43,7 @@ let secondaryColor = "#fff";
 let currentColor = primaryColor;
 let currentTool = "";
 let currentTemplate = "8";
+let selectedPixels = new Array();
 
 navSupport.addEventListener("click", () => {
   supportModalContainer.classList.remove("hidden");
@@ -113,19 +114,42 @@ tools.forEach((tool) => {
           selectedColorPrimary.style.backgroundColor = primaryColor;
           selectedColorSecondary.style.backgroundColor = secondaryColor;
         }
+
+        if (currentTool === "multi") {
+          selectedPixels.forEach((pixel) => {
+            console.log(color);
+            console.log(pixel);
+            pixel.style.backgroundColor = color.dataset.color;
+            pixel.style.border = "1px solid #000";
+          });
+
+          tool.addEventListener("click", () => {
+            selectedPixels.forEach((pixel) => {
+              pixel.style.border = "1px solid #000";
+            });
+            selectedPixels = new Array();
+          });
+          selectedPixels = new Array();
+        }
       });
     });
 
     pixels.forEach((pixel) => {
       pixel.addEventListener("click", () => {
         if (currentTool === "brush") pixel.style.backgroundColor = currentColor;
-      });
-    });
-
-    pixels.forEach((pixel) => {
-      pixel.addEventListener("click", () => {
         if (currentTool === "erase")
           pixel.style.backgroundColor = "transparent";
+        if (currentTool === "multi") {
+          selectedPixels.push(pixel);
+          pixel.style.border = "2px solid #0000ff";
+
+          tool.addEventListener("click", () => {
+            selectedPixels.forEach((pixel) => {
+              pixel.style.border = "1px solid #000";
+            });
+            selectedPixels = new Array();
+          });
+        }
       });
     });
   });
