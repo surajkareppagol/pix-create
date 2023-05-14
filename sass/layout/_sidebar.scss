@@ -51,9 +51,14 @@
     border-radius: 4px;
     cursor: pointer;
 
+    @include respond(phone) {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+
     &--primary {
       background-color: $color-black;
-      z-index: 5;
+      z-index: 1;
       position: relative;
       top: 0%;
       left: 0%;
@@ -64,7 +69,7 @@
       position: absolute;
       top: 40%;
       left: 40%;
-      z-index: 1;
+      z-index: 0;
     }
   }
 }
@@ -72,13 +77,22 @@
 .selected-color-tool {
   transform: rotate(135deg);
   position: absolute;
-  top: 20%;
-  right: -90%;
-  font-size: 32px;
+  top: 40%;
+  right: -100%;
+
+  @include respond(phone) {
+    top: 40%;
+    right: -100%;
+  }
 
   &__tool {
+    font-size: 32px;
     color: $color-white;
     cursor: pointer;
+
+    @include respond(phone) {
+      font-size: 20px;
+    }
   }
 }
 

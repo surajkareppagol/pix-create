@@ -35,6 +35,13 @@ body {
   background-color: $color-secondary;
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
+}
+
+.text-select-disable {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /*********************************************
