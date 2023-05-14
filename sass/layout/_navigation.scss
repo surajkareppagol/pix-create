@@ -1,3 +1,7 @@
+/*********************************************
+ *  Navigation
+ *********************************************/
+
 .header {
   max-width: 130rem;
   margin: 0 auto;
@@ -33,6 +37,9 @@
   }
 
   &__li {
+    &--template {
+      position: relative;
+    }
   }
 
   &__link {
@@ -41,3 +48,37 @@
     color: $color-white;
   }
 }
+
+.template-option-container {
+  position: absolute;
+  top: 120%;
+  left: -20%;
+  width: 140%;
+
+  &__options {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: 10px;
+
+    background-color: $color-primary;
+  }
+
+  &__option {
+  }
+
+  &__text {
+    color: $color-white;
+    font-size: 1.6rem;
+    text-align: center;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    padding: 0.1rem 1rem;
+  }
+}
+/*********************************************
+ *  EOF
+ *********************************************/

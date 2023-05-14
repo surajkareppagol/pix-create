@@ -1,6 +1,22 @@
+/*********************************************
+ *  Main Scss
+ *********************************************/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 @import "./base/variables";
 @import "./base/mixins";
+@import "./base/utility";
 @import "./base/base";
-@import "./layout/layout";
 @import "./layout/navigation";
+@import "./layout/layout";
+@import "./layout/sidebar";
+@import "./layout/toolbar";
+@import "./layout/template";
+@import "./layout/detail";
+@import "./layout/support";
+@import "./layout/examples";
+
+/*********************************************
+ *  EOF
+ *********************************************/
