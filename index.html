@@ -22,10 +22,25 @@
         <div class="header-nav-container">
           <nav class="nav-main">
             <ul class="nav-main__ul">
+              <li class="nav-main__li nav-main__li--template">
+                <a href="#" class="nav-main__link">Templates</a>
+                <div class="template-option-container hidden">
+                  <div class="template-option-container__options">
+                    <div class="template-option-container__option">
+                      <p class="template-option-container__text link-option">
+                        8 X 8
+                      </p>
+                    </div>
+                    <div class="template-option-container__option">
+                      <p class="template-option-container__text">16 X 16</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
               <li class="nav-main__li">
                 <a href="#" class="nav-main__link">Examples</a>
               </li>
-              <li class="nav-main__li">
+              <li class="nav-main__li nav-main__li--support">
                 <a href="#" class="nav-main__link">Support</a>
               </li>
             </ul>
@@ -55,6 +70,11 @@
               data-tool="erase"
             ></ion-icon>
             <ion-icon
+              name="square-outline"
+              class="tool-container__tool"
+              data-tool="multi"
+            ></ion-icon>
+            <ion-icon
               name="save-outline"
               class="tool-container__tool"
               data-tool="save"
@@ -64,76 +84,369 @@
 
         <!-- Middle -->
         <div class="middle-container">
-          <div class="template-container">
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
-            <div class="pixel">&nbsp;</div>
+          <div class="template-container template-container__8">
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+            <div class="pixel pixel__8">&nbsp;</div>
+          </div>
+
+          <div class="template-container template-container__16 hidden">
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
+            <div class="pixel pixel__16">&nbsp;</div>
           </div>
         </div>
 
         <!-- Right -->
         <div class="right-container">
+          <div class="selected-container">
+            <div class="selected__tools">
+              <ion-icon
+                name="brush-outline"
+                class="selected__tool selected__tool--active"
+                data-tool="brush"
+              ></ion-icon>
+            </div>
+
+            <div class="selected-container__state">
+              <div class="selected__colors">
+                <div
+                  class="selected__color selected__color--primary"
+                  data-color="#000"
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="selected__color selected__color--secondary"
+                  data-color="#fff"
+                >
+                  &nbsp;
+                </div>
+                <div class="selected-color-tool">
+                  <ion-icon
+                    name="resize-outline"
+                    class="selected-color-tool__tool"
+                    data-tool="brush"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="color-container">
             <div class="two-color-container">
               <div
@@ -211,7 +524,7 @@
           <div class="usage-container">
             <div class="usage-img-container">
               <img
-                src="assets/interface/pix_create_test.gif"
+                src="assets/interface/pix_create.gif"
                 alt="usage-video"
                 class="usage-img-container__img"
               />
@@ -264,6 +577,32 @@
           <ion-icon
             name="close-outline"
             class="detail-container__container--close"
+          ></ion-icon>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-support hidden">
+      <div class="support-container">
+        <div class="support-container__container">
+          <h1 class="support-container__h1">
+            How To Support, Pix Creator &mdash; Pixel Art Creator&quest;
+          </h1>
+          <div class="usage-container">
+            <p class="usage-container__text">
+              Support this project by giving a star on
+              <a
+                href="https://github.com/dev-shadoww/pix_create"
+                target="_blank"
+                class="usage-container__link"
+                >GitHub</a
+              >.
+            </p>
+          </div>
+
+          <ion-icon
+            name="close-outline"
+            class="support-container__container--close"
           ></ion-icon>
         </div>
       </div>

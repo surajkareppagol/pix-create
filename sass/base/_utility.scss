@@ -1,16 +1,15 @@
 /*********************************************
- *  Main Layout
+ *  Utility Styles
  *********************************************/
 
-.section-main {
-  max-width: 130rem;
-  margin: 0 auto;
-  background-color: $color-white;
-  border-radius: 8px;
+.hidden {
+  display: none !important;
 }
 
-.main-container {
-  display: flex;
+.link-option {
+  background-color: $color-white;
+  color: $color-primary !important;
+  border-radius: 8px;
 }
 
 /*********************************************

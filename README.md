@@ -6,7 +6,7 @@ The `PIX Create` is now live, [here 🔗🔗](https://dev-shadoww.github.io/pix_
 
 ## How To Use It?
 
-![Pix_Create](/assets/interface/pix_create_test.gif)
+![Pix_Create](/assets/interface/pix_create.gif)
 
 1. `Brush Tool` - This tool is used to paint the pixels.
 2. `Color Tool` - This tool is used to select a different color.
@@ -14,3 +14,8 @@ The `PIX Create` is now live, [here 🔗🔗](https://dev-shadoww.github.io/pix_
 4. `Save Tool` - This tool is used to save the project.
 
 Note - The `Save Tool` is still in development.
+
+## What's new?
+
+- Added new `UI` elements on the sidebar.
+- Added new `16X16` template.

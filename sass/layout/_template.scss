@@ -1,0 +1,56 @@
+/*********************************************
+ *  Template ( Middle Container )
+ *********************************************/
+
+.middle-container {
+  flex: 1;
+  min-height: 86vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.template-container {
+  &__8 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border: 0.01px solid $color-black;
+  }
+
+  &__16 {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    border: 0.01px solid $color-black;
+  }
+}
+
+.pixel {
+  background-color: transparent;
+  margin: 0rem;
+  border: 0.01px solid $color-black;
+
+  &__8 {
+    width: 5.4rem;
+    height: 5.4rem;
+
+    @include respond(phone) {
+      width: 4.4rem;
+      height: 4.4rem;
+    }
+  }
+
+  &__16 {
+    width: 3rem;
+    height: 3rem;
+
+    @include respond(phone) {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+/*********************************************
+ *  EOF
+ *********************************************/
