@@ -161,7 +161,7 @@ colors.forEach((color) => {
     if (currentTool === "multi") {
       selectedPixels.forEach((pixel) => {
         pixel.style.backgroundColor = color.dataset.color;
-        pixel.style.border = "1px solid #000";
+        pixel.style.border = "0.01px solid #000";
       });
 
       selectedPixels = [];
