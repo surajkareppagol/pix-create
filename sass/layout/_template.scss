@@ -9,6 +9,11 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
+  @include respond(phone) {
+    min-height: 60vh;
+    padding: 2rem 0;
+  }
 }
 
 .template-container {
