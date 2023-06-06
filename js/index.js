@@ -31,10 +31,33 @@ const tools = document.querySelectorAll(".tool-container__tool");
  *  Middle Bar
  *********************************************/
 
-const pixels = document.querySelectorAll(".pixel");
 const templates = document.querySelectorAll(".template-container");
 const templateSizeEight = document.querySelector(".template-container__8");
 const templateSizeSixteen = document.querySelector(".template-container__16");
+
+/*********************************************
+ *  Insert Pixel Boxes
+ *********************************************/
+
+for (let i = 0; i < 64; i++) {
+  const pixelElement = document.createElement("div");
+  pixelElement.innerHTML = "&nbsp;";
+  pixelElement.classList.add("pixel");
+  pixelElement.classList.add("pixel__8");
+
+  templateSizeEight.append(pixelElement);
+}
+
+for (let i = 0; i < 256; i++) {
+  const pixelElement = document.createElement("div");
+  pixelElement.innerHTML = "&nbsp;";
+  pixelElement.classList.add("pixel");
+  pixelElement.classList.add("pixel__16");
+
+  templateSizeSixteen.append(pixelElement);
+}
+
+const pixels = document.querySelectorAll(".pixel");
 
 /*********************************************
  *  Side Bar
