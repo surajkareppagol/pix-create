@@ -59,8 +59,10 @@ body {
   min-height: 100vh;
   position: relative; }
 
-.text-select-disable {
+html,
+body {
   -webkit-user-select: none;
+  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
 
