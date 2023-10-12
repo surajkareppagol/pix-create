@@ -182,6 +182,7 @@ colors.forEach((color) => {
     }
 
     if (currentTool === "multi") {
+      console.log(selectedPixels);
       selectedPixels.forEach((pixel) => {
         pixel.style.backgroundColor = color.dataset.color;
         pixel.style.border = "0.01px solid #000";
@@ -204,6 +205,16 @@ pixels.forEach((pixel) => {
       selectedPixels.push(pixel);
       pixel.style.border = "2px solid #0000ff";
     }
+
+    if (currentTool !== "hover") return;
+
+    pixels.forEach((pixel) => {
+      pixel.addEventListener("mouseover", (e) => {
+        if (currentTool === "hover") {
+          pixel.style.backgroundColor = currentColor;
+        }
+      });
+    });
   });
 });
 
