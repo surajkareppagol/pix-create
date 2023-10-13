@@ -159,6 +159,7 @@ tools.forEach((tool) => {
     tool.classList.add("tool-container__tool--active");
     currentTool = tool.dataset.tool;
     selectedTool.setAttribute("name", tool.getAttribute("name"));
+    selectedTool.setAttribute("title", tool.getAttribute("title"));
 
     selectedPixels.forEach((pixel) => {
       pixel.style.border = "1px solid #000";
@@ -173,7 +174,10 @@ tools.forEach((tool) => {
 
 colors.forEach((color) => {
   color.addEventListener("click", () => {
-    if (currentColor != color.dataset.color && currentTool === "color") {
+    if (
+      currentColor != color.dataset.color &&
+      (currentTool === "color" || currentTool === "hover")
+    ) {
       currentColor = color.dataset.color;
       secondaryColor = primaryColor;
       primaryColor = currentColor;
@@ -182,7 +186,6 @@ colors.forEach((color) => {
     }
 
     if (currentTool === "multi") {
-      console.log(selectedPixels);
       selectedPixels.forEach((pixel) => {
         pixel.style.backgroundColor = color.dataset.color;
         pixel.style.border = "0.01px solid #000";
@@ -197,26 +200,30 @@ colors.forEach((color) => {
  *  Select Pixel
  *********************************************/
 
-pixels.forEach((pixel) => {
-  pixel.addEventListener("click", () => {
-    if (currentTool === "brush") pixel.style.backgroundColor = currentColor;
-    if (currentTool === "erase") pixel.style.backgroundColor = "transparent";
-    if (currentTool === "multi") {
-      selectedPixels.push(pixel);
-      pixel.style.border = "2px solid #0000ff";
+templates.forEach((template) =>
+  template.addEventListener("click", (event) => {
+    if (event.target.classList.value.includes("pixel")) {
+      const pixel = event.target;
+      if (currentTool === "brush") pixel.style.backgroundColor = currentColor;
+      if (currentTool === "erase") pixel.style.backgroundColor = "transparent";
+      if (currentTool === "multi") {
+        selectedPixels.push(pixel);
+        pixel.style.border = "2px solid #0000ff";
+      }
     }
+  })
+);
 
-    if (currentTool !== "hover") return;
-
-    pixels.forEach((pixel) => {
-      pixel.addEventListener("mouseover", (e) => {
-        if (currentTool === "hover") {
-          pixel.style.backgroundColor = currentColor;
-        }
-      });
-    });
-  });
-});
+templates.forEach((template) =>
+  template.addEventListener("mouseover", (event) => {
+    if (
+      currentTool === "hover" &&
+      event.target.classList.value.includes("pixel")
+    ) {
+      event.target.style.backgroundColor = currentColor;
+    }
+  })
+);
 
 /*********************************************
  *  EOF
