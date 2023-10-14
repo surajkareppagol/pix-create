@@ -83,6 +83,7 @@ let currentColor = primaryColor;
 let currentTool = "";
 let currentTemplate = "8";
 let selectedPixels = [];
+let isMouseDown = false;
 
 /*********************************************
  *  Modals
@@ -215,15 +216,28 @@ templates.forEach((template) =>
 );
 
 templates.forEach((template) =>
+  template.addEventListener("mousedown", () => {
+    isMouseDown = true;
+  })
+);
+
+templates.forEach((template) =>
+  template.addEventListener("mouseup", () => {
+    isMouseDown = false;
+  })
+);
+
+templates.forEach((template) => {
   template.addEventListener("mouseover", (event) => {
     if (
+      isMouseDown &&
       currentTool === "hover" &&
       event.target.classList.value.includes("pixel")
     ) {
       event.target.style.backgroundColor = currentColor;
     }
-  })
-);
+  });
+});
 
 /*********************************************
  *  EOF
